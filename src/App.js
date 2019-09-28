@@ -3,7 +3,7 @@ import DogCard from "./components/DogCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import ScoreBoard from "./components/ScoreBoard"; 
-import dogs from "./dogbreeds.json.js";
+import dogs from "./dogbreeds.json";
 
 class App extends Component {
   // Setting this.state.friends to the friends json array
