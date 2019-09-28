@@ -3,7 +3,7 @@ import "./style.css";
 
 function DogCard(props) {
   return (
-    <div className="card">
+    <div className="card" onClick={() => props.alreadyClicked(props.id)}>
       <div className="img-container">
         <img alt={props.breed} src={props.image} />
       </div>
@@ -20,11 +20,8 @@ function DogCard(props) {
           </li>
         </ul>
       </div>
-      <span onClick={() => props.removeDog(props.id)} className="remove">
-        𝘅
-      </span>
     </div>
-  );
+  ); 
 }
 
 export default DogCard;
