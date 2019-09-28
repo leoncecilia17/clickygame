@@ -1,2 +1,2 @@
-# Clicky Game
+# Dog Breed Clicky Game 
 

@@ -1,30 +1,30 @@
 import React from "react";
 import "./style.css";
 
-function FriendCard(props) {
+function DogCard(props) {
   return (
     <div className="card">
       <div className="img-container">
-        <img alt={props.name} src={props.image} />
+        <img alt={props.breed} src={props.image} />
       </div>
       <div className="content">
         <ul>
           <li>
-            <strong>Name:</strong> {props.name}
+            <strong>Breed:</strong> {props.breed} 
           </li>
           <li>
-            <strong>Occupation:</strong> {props.occupation}
+            <strong>Temperament:</strong> {props.temperament}
           </li>
           <li>
-            <strong>Location:</strong> {props.location}
+            <strong>AKC Group:</strong> {props.group}
           </li>
         </ul>
       </div>
-      <span onClick={() => props.removeFriend(props.id)} className="remove">
+      <span onClick={() => props.removeDog(props.id)} className="remove">
         𝘅
       </span>
     </div>
   );
 }
 
-export default FriendCard;
+export default DogCard;
