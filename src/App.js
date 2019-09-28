@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import DogCard from "./components/DogCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
+import ScoreBoard from "./components/ScoreBoard"; 
 import dogs from "./dogbreeds.json";
 
 class App extends Component {
@@ -54,7 +55,7 @@ class App extends Component {
       return dog; 
     }); 
     console.log(dogs)
-    // new array is set and matched to the newest array 
+    // newest array is stored and compared to even newer array 
     this.setState({ dogs : newdogArray }); 
 
     const shuffledArray = this.state.dogs.sort(()=>Math.random()-0.5)
@@ -68,10 +69,12 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>Dog Breed Clicky Game
+        <Title>Dog Breed Clicky Game</Title>
+        <ScoreBoard>
         Current Score: {this.state.currentScore}
+        <br></br>
         High Score: {this.state.highScore}
-        </Title>
+        </ScoreBoard>
         {this.state.dogs.map(dog => (
           <DogCard
             alreadyClicked={this.alreadyClicked}
