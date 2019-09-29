@@ -1,7 +1,7 @@
 # Dog Breed Clicky Game 
 
 ## Description 
- 
+  
 This memory game was created using React by breaking up the application's UI into components, states, and responses to user events. 
  
 ## Usage 
