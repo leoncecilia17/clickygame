@@ -3,7 +3,7 @@
 ## Description 
   
 This memory game was created using React by breaking up the application's UI into components, states, and responses to user events. 
- 
+  
 ## Usage 
 - This application will render different images of different dog breeds. Each image will listen for a click event from the user. 
 - The application keeps track of the user's score everytime the user clicks on a unique image which increments the total score by 1. However, if the user clicks on the same image twice, the user's score will reset to 0. 
